@@ -1,0 +1,34 @@
+.homeIcon {
+    font-size: 7vh;
+    position: relative;
+    top: -5px;
+    right: 10px;
+}
+
+.gitNavbarContainer {
+    display: flex;
+}
+
+.gitNav {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.gitTitle {
+    color: white;
+}
+
+.jobLoading {
+    display: flex;
+    justify-content: center;
+}
+
+.jobLoadingText {
+    font-size: 8vh;
+}
+
+/*SearchForm Component*/
+
+.gitForm {
+    color: white;
+}

@@ -4,6 +4,9 @@ import { Container } from 'react-bootstrap';
 import Job from './Job.js';
 import JobsPagination from './JobsPagination';
 import SearchForm from './SearchForm';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './App.css';
+
 
 function App() {
   const [params, setParams] = useState({});
@@ -21,10 +24,17 @@ function App() {
 
   return (
     <Container className="my-4">
-      <h1 className="mb-4">GitHub Jobs</h1>
+      <nav className="navbar-expand-md gitNav mb-4">
+        <div className="container gitNavbarContainer">
+          <FontAwesomeIcon icon="home" color="white" className="homeIcon mr-4" />
+          <h1 className="mb-4 gitTitle">GitHub Jobs</h1>
+        </div>
+      </nav>
       <SearchForm params={params} onParamChange={handleParamChange} />
       <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
-      {loading && <h1>Loading...</h1>}
+      <div className="jobLoading">
+      {loading && <h1 className="jobLoadingText">Loading...</h1>}
+      </div>
       {error && <h1>Error. Try Refreshing</h1>}
       {jobs.map(job => {
         return <Job key={job.id} job={job} />
