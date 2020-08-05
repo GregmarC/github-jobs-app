@@ -31,15 +31,16 @@ function App() {
         </div>
       </nav>
       <SearchForm params={params} onParamChange={handleParamChange} />
-      <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
-      <div className="jobLoading">
-      {loading && <h1 className="jobLoadingText">Loading...</h1>}
+      {!loading && <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} /> }
+      <div className="jobLoading mt-5">
+      {loading && <h1 className="jobLoadingText mb-4">Loading Jobs...</h1>}
+      {loading && <FontAwesomeIcon icon="cog" color="black" className="cogIcon" spin/>}
       </div>
       {error && <h1>Error. Try Refreshing</h1>}
       {jobs.map(job => {
         return <Job key={job.id} job={job} />
       })}
-      <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
+      {!loading && <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} /> }
     </Container>
   );
 }
