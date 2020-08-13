@@ -18,7 +18,7 @@
     "react-markdown": "^4.3.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "http://x1jinchu1x.github.io/github-jobs-app",
+  "homepage": "https://x1jinchu1x.github.io/github-jobs-app",
   "proxy": "https://jobs.github.com",
   "scripts": {
     "start": "react-scripts start",
