@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Col, FormLabel } from 'react-bootstrap';
+import { Form, Col } from 'react-bootstrap';
 import './App.css';
 
 export default function SearchForm({ params, onParamChange }) {
