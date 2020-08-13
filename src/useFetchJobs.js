@@ -41,6 +41,7 @@ export default function useFetchJobs(params, page) {
             dispatch( { type: ACTIONS.GET_DATA, payload: { jobs: res.data }})
         }).catch(e => {
             if(axios.isCancel(e)) return
+            console.log("An error occurred while fetching jobs: ", e)
             dispatch( { type: ACTIONS.ERROR, payload: { error: e } })
         })
 
