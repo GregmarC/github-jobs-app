@@ -20,7 +20,7 @@ export default function Job({ job }) {
                         <Badge className="mr-2" variant="secondary">{job.type}</Badge>
                         <Badge variant="secondary">{job.location}</Badge>
                         <div style={{ wordBreak: 'break-all' }}>
-                            <ReactMarkdown source={job.how_to_apply} />
+                            <ReactMarkdown source={job.how_to_apply} escapeHtml={false}/>
                         </div>
                     </div>
                     <img className="d-none d-md-block" height="50" alt={job.company} src={job.company_logo}></img>
@@ -35,7 +35,7 @@ export default function Job({ job }) {
                 </Card.Text>
                 <Collapse in={open}>
                     <div className="mt-4">
-                        <ReactMarkdown source={job.description} />
+                        <ReactMarkdown source={job.description} escapeHtml={false}/>
                     </div>
                 </Collapse>
             </Card.Body>
