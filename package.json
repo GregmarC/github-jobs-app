@@ -19,8 +19,11 @@
     "react-scripts": "3.4.1"
   },
   "proxy": "https://jobs.github.com",
+  "homepage": "https://x1jinchu1x.github.io/github-jobs-app",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
