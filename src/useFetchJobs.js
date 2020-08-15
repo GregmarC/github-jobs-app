@@ -33,7 +33,7 @@ export default function useFetchJobs(params, page) {
 
         const cancelToken1 = axios.CancelToken.source()
 
-        console.log("Current url being called: ",BASE_URL);
+        console.log("Current url being called (with new manual proxy): ",BASE_URL);
         dispatch({ type: ACTIONS.MAKE_REQUEST })
         axios.get(BASE_URL, {
             cancelToken: cancelToken1.token,
