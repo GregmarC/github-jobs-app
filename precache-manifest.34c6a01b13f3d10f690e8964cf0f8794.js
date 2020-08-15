@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2a044358ebe37ce68d647e05d2eb3ce",
+    "revision": "64b7f485059fa2c5bf85ea6322382a03",
     "url": "/github-jobs-app/index.html"
   },
   {
-    "revision": "28c9393041f71711f97b",
+    "revision": "93c948054d56e1e300da",
     "url": "/github-jobs-app/static/css/main.ab09b18e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github-jobs-app/static/js/2.0ebd6beb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28c9393041f71711f97b",
-    "url": "/github-jobs-app/static/js/main.58000bf0.chunk.js"
+    "revision": "93c948054d56e1e300da",
+    "url": "/github-jobs-app/static/js/main.8bdb1d0c.chunk.js"
   },
   {
     "revision": "8b73d2fe66d00593cdb4",
