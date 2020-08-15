@@ -8,7 +8,7 @@ const ACTIONS = {
     UPDATE_HAS_NEXT_PAGE: 'update-has-next-page'
 }
 
-const BASE_URL = 'https://us-central1-gregs-cors-proxy-server.cloudfunctions.net/corsProxy/positions.json';
+const BASE_URL = '/positions.json';
 
 
 function reducer(state, action) {
