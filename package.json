@@ -18,17 +18,19 @@
     "bootstrap-icons": "^1.0.0-alpha5",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
+    "gh-pages": "^3.1.0",
     "http-proxy-middleware": "^1.0.5",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "request": "^2.88.2"
   },
-  "homepage": ".",
+  "homepage": "https://x1jinchu1x.github.io/github-jobs-app",
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",

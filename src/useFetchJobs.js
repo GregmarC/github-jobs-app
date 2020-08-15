@@ -8,7 +8,7 @@ const ACTIONS = {
     UPDATE_HAS_NEXT_PAGE: 'update-has-next-page'
 }
 
-const BASE_URL = '/positions.json';
+const BASE_URL = 'https://morning-headland-04700.herokuapp.com/http://jobs.github.com/positions.json';
 
 
 function reducer(state, action) {
